@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>card Hover Effect</title>
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="Home.css"/>
+</head>
+
+<body>
+    <header>
+    <div class="navbar">
+        <div class="logo"><a href="#">Persian Culture Introduction</div>
+            <ul class="links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="Art.html">Art</a></li>
+                <li><a href="ethnic.html">Ethnic</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i></div> 
+    </div>
+    <div class="dropdown_menu ">
+        <ul class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Food.html">Food</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="ethnic.html">Ethnic</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </ul>
+    </div>
+    </header>
+    <main>
+        <section>
+            <div class="hero-banner">
+                <div class="hero-banner__title" aria-hidden="true"></div>
+                <img class="hero-banner__image" src="st,small,507x507-pad,600x600,f8f8f8.jpg"/>
+                <h1 class="hero-banner__title hero-banner__stroked-title">persian culture</h1>
+              </div>
+              
+              <div class="content">
+                <details><summary>Persia, historically known as one of the world's most influential civilizations, was located in what is now modern-day Iran. It has a rich and diverse history that spans thousands of years. Here are some key points about Persia:</summary>
+
+                
+                   <strong> 1. Ancient Roots:</strong> The history of Persia dates back to ancient times, with the Elamite civilization as one of its predecessors. The first Persian Empire, the Achaemenid Empire, was founded by Cyrus the Great in the 6th century BCE.<br>
+
+                   
+                <strong>2. Achaemenid Empire:</strong> Under the rule of Cyrus and his successors, the Achaemenid Empire became the largest empire in the world at the time. It extended from Anatolia (modern-day Turkey) to the Indus Valley and encompassed many diverse cultures and regions.<br>
+
+<strong>3. Cultural Contributions: </strong>Persia made significant contributions to art, architecture, and literature. The Achaemenids are known for their impressive palace complexes, including Persepolis, and the development of the first human rights charter, known as the Cyrus Cylinder.<br>
+
+<strong>4. Persian Language:</strong> The Persian language, known as Farsi or Persian, has a rich literary tradition and is still spoken in Iran today. Persian poetry, with poets like Rumi and Hafez, is celebrated for its beauty and wisdom.<br>
+
+<strong>5. Islamic Persia:</strong> In the 7th century CE, Persia embraced Islam, becoming a center of Islamic culture and scholarship. The Persian Empire was succeeded by various dynasties, including the Safavids and the Qajars, who left their mark on Persian art and culture.<br>
+
+<strong>6. Modern Iran:</strong> Persia transformed into the modern nation of Iran in the 20th century. Iran has a complex political and social landscape and is known for its diverse landscapes, from deserts to mountains.<br>
+
+<strong>7. Contemporary Influence:</strong> Iran continues to be an influential player in the Middle East and on the global stage, with a rich cultural heritage that includes music, literature, and cuisine.
+
+This is just a brief overview of the long and intricate history of Persia, which has left a lasting impact on the world in various ways.
+                    
+                    </details>
+              </div>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownmenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownmenu.classList.toggle('open')
+            const isOpen = dropDownmenu.classList.contains('open')
+
+            toggleBtnIcon.classlist = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <hr>
+    
+   <section class="container">
+    <div class="card">
+        <div class="card-image place-1"></div>
+        <h2>Shiraz</h2>
+        <p>Shiraz. Nasir al-Mulk Mosque,
+             the Pink Mosque located in Gawd-i Araban quarter,
+             near Shah Cheragh Mosque.
+             It has colored glass known as the Panj Kāse,
+             "five concaved" design</p>
+             <a href="">More</a>
+    </div>
+        <div class="card">
+            <div class="card-image place-2"></div>
+            <h2>Golestan palace</h2>
+            <p>The Golestan Palace,
+                 also called the “Palace of flowers”
+                 , is one the oldest and most beautiful 
+                 of all historic monuments in Tehran and 
+                 its listed as a UNESCO world heritage site.</p>
+                 <a href="">More</a>
+        </div>
+
+     <div class="card">
+        <div class="card-image place-3"></div>
+        <h2>HISTORICAL HOUSES</h2>
+        <p>The most famous historical houses in Kashan are the Tabatabaei House,
+             Borujerdi House, Mahinestan Rahib House, 
+             Ameri House, Manuchehri House, and Abbasi House</p>
+            <a href="">More</a>
+        </div>
+    </section>
+</body>
+</html>

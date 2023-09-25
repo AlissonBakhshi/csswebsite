@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="Food.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><a href="#">Persian Culture Introduction</div>
+            <ul class="links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="Art.html">Art</a></li>
+                <li><a href="ethnic.html">Ethnic</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i></div> 
+    </div>
+    <div class="dropdown_menu ">
+        <ul class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Food.html">Food</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="ethnic.html">Ethnic</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownmenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownmenu.classList.toggle('open')
+            const isOpen = dropDownmenu.classList.contains('open')
+
+            toggleBtnIcon.classlist = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+    <hr>
+    
+    <section class="container">
+     <div class="card">
+         <div class="card-image food"></div>
+         <h2>Traditional Food</h2>
+         <p>Ghormeh Sabzi is a classic and beloved Persian stew known for its rich flavors and aromatic herbs</p>
+              <a href="">More Food</a>
+     </div>
+              
+    <div class="card">
+        <div class="card-image side_dishes"></div>
+        <h2>side-dishes</h2>
+        <p>Mast-o-khiar, also known as "yogurt with cucumber," is a popular and refreshing Persian side dish or condiment.</p>
+            <a href="">More Side-dishes</a>
+            </div>
+    <div class="card">
+        <div class="card-image drinks"></div>
+        <h2>Drink's</h2>
+        <p>Sharbat Golab Zaferan is a Persian drink that combines the fragrant flavors of rosewater (Golab) and saffron (Zaferan).</p>
+            <a href="">More Drink's</a>
+    </div>
+    
+    <div class="card">
+        <div class="card-image dessert"></div>
+        <h2>Dessert</h2>
+        <p>Sholeh zard, also spelled as "shole zard" or "sholehzard," is a sweet and aromatic Persian rice pudding. It is a traditional dessert that holds a special place in Persian cuisine and is often served during celebrations and special occasions</p>
+            <a href="">More dessert</a>
+    </div>
+
+    <div class="card">
+        <div class="card-image Appetizer"></div>
+        <h2>Appetizer</h2>
+        <p>Kashk bademjoon, also spelled as "kashke bademjan," is a delicious and popular Persian appetizer made from eggplants and kashk.</p>
+            <a href="">More Appetizer</a>
+            
+    </div>
+    <div class="description">
+        <p>Iranian cuisine is known for its rich flavors and diverse dishes. Here are some traditional Iranian foods:</p>
+        
+        <div class="Vertical-line"></div>
+            <p> 
+               <strong> 1. Kebabs:</strong> Iranians love their kebabs, which can be made from various meats such as lamb, chicken, or beef, and often served with rice and grilled tomatoes. <br>
+                
+                <strong>2. Tahdig:</strong> This is a beloved Persian dish, made by crisping the bottom layer of rice in the pot, creating a delicious crunchy texture. It's often served as a side dish. <br>
+                
+                <strong>3. Ghormeh Sabzi:</strong> A popular Iranian stew made with a mixture of fresh herbs, red beans, and tender chunks of meat (usually beef or lamb). <br>
+                
+                <strong>4. Dolmeh:</strong> Stuffed vegetables, like grape leaves or bell peppers, filled with a mixture of rice, herbs, and sometimes ground meat, cooked in a savory tomato sauce. <br>
+                
+                <strong>5. Fesenjan:</strong> A unique dish made from pomegranate paste and crushed walnuts, often served with chicken or duck. It has a sweet and tangy flavor. <br>
+                
+                <strong>6. Zereshk Polo:</strong> A colorful rice dish made with barberries, saffron, and sometimes chicken. The tartness of the barberries balances the saffron's sweetness. <br>
+                
+                <strong>7. Ash Reshteh:</strong> A hearty noodle soup filled with beans, herbs, and sometimes meat, traditionally eaten during the Persian New Year. <br>
+                
+                <strong>8. Mirza Ghasemi:</strong> A flavorful eggplant and tomato dish, often served as a dip with bread. It's made with garlic, eggs, and spices. <br>
+                
+                <strong>9. Abgoosht:</strong> Also known as "Dizi," this is a traditional Iranian stew made with lamb or beef, chickpeas, white beans, and various spices. It's often eaten in two stages: first as a soup, then the remaining ingredients are mashed together and eaten with bread. <br>
+                
+                <strong>10. Halva:</strong> A popular dessert made from ingredients like sesame paste, wheat flour, or rice, sweetened with sugar or honey and flavored with cardamom or rosewater. <br>
+                
+                <strong>11. Baklava:</strong> Although associated with various Middle Eastern cuisines, Iranians also enjoy this sweet pastry made from layers of filo dough, nuts, and sweet syrup. <br>
+                
+                <strong>12. Saffron Rice:</strong> Saffron is a prized spice in Iranian cuisine and is often used to flavor rice, giving it a beautiful golden color and a subtle, fragrant taste. <br>
+                
+                These are just a few examples of the many delicious dishes you can find in Iranian cuisine, which reflects the country's rich culinary history and regional diversity.</details></p>
+    
+    </div>
+    
+</body>
+</html>

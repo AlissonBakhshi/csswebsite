@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ethnic.css"/>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="btn-group my-5">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">Persian Culture Introduction</div>
+                <ul class="links">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Food.html">Food</a></li>
+                    <li><a href="Art.html">Art</a></li>
+                    <li><a href="ethnic.html">Ethnic</a></li>
+                </ul>
+                <a href="#" class="action_btn">Get started</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i></div> 
+        </div>
+        <div class="dropdown_menu ">
+            <ul class="links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="Art.html">Art</a></li>
+                <li><a href="ethnic.html">Ethnic</a></li>
+                <li><a href="#" class="action_btn">Get started</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <script>
+            const toggleBtn = document.querySelector(".toggle_btn")
+            const toggleBtnIcon = document.querySelector(".toggle_btn i")
+            const dropDownmenu = document.querySelector(".dropdown_menu")
+    
+            toggleBtn.onclick = function () {
+                dropDownmenu.classList.toggle('open')
+                const isOpen = dropDownmenu.classList.contains('open')
+    
+                toggleBtnIcon.classlist = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+        <hr>
+        <div class="h1ethnic">
+            <h1>Iran is a diverse country with several ethnic groups.Some of the major ethnic groups in Iran include:</h1></div>
+        <section class="container">
+            <div class="card">
+                <div class="card-image persian"></div>
+                <h2>Persian</h2>
+                     <a href="">More</a>
+            </div>
+                     
+           <div class="card">
+               <div class="card-image Assyrian"></div>
+               <h2>Assyrian</h2>
+                   <a href="">More</a>
+                   </div>
+           <div class="card">
+               <div class="card-image Armenian"></div>
+               <h2>Armenian</h2>
+                   <a href="">More</a>
+           </div>
+           
+           <div class="card">
+               <div class="card-image Gilaki"></div>
+               <h2>Gilaki</h2>
+                   <a href="">More</a>
+           </div>
+       
+           <div class="card">
+               <div class="card-image Turkmen"></div>
+               <h2>Turkmen</h2>
+                   <a href="">More</a>
+                   
+           </div>
+           <section class="container">
+            <div class="card">
+                <div class="card-image Jewish"></div>
+                <h2>Jewish</h2>
+                     <a href="">More</a>
+            </div>
+                     
+           <div class="card">
+               <div class="card-image Azerbaijan"></div>
+               <h2>Azerbaijan</h2>
+                   <a href="">More</a>
+                   </div>
+           <div class="card">
+               <div class="card-image Kurdish"></div>
+               <h2>Kurdish</h2>
+                   <a href="">More</a>
+           </div>
+           
+           <div class="card">
+               <div class="card-image Arab"></div>
+               <h2>Arab</h2>
+                   <a href="">More</a>
+           </div>
+       
+           <div class="card">
+               <div class="card-image Lur"></div>
+               <h2>Lur</h2>
+                   <a href="">More</a>
+                   
+           </div>
+           <section class="container">
+            <div class="card">
+                <div class="card-image Baloch"></div>
+                <h2>Baloch</h2>
+                     <a href="">More</a>
+            </div>
+            <div class="description">
+                <p>description</p>
+                <div class="Vertical-line"></div>
+                    <p><strong> Persian:</strong> The majority ethnic group, making up around 60-65% of Iran's population. They speak Persian (Farsi) and are predominantly Shia Muslim.<br>
+
+                        <strong>2. Azerbaijani:</strong> The second-largest ethnic group, primarily located in northwestern Iran, with Azerbaijani as their language. <br>
+                        
+                        <strong>3. Kurdish:</strong> Mainly residing in the western part of Iran, they speak Kurdish and are predominantly Sunni Muslims. <br>
+                        
+                        <strong>4. Arab:</strong> Found in southwestern Iran, particularly in Khuzestan province. They speak Arabic and are primarily Shia Muslims. <br>
+                        
+                        <strong>5. Lur:</strong> In the southwestern and western regions, they speak Luri and are predominantly Shia Muslims. <br>
+                        
+                        <strong>6. Baloch:</strong> In southeastern Iran, they speak Balochi and are primarily Sunni Muslims. <br>
+                        
+                        <strong>7. Turkmen:</strong> Located in the northeastern part of Iran, they speak Turkmen. <br>
+                        
+                        <strong>8. Gilaki and Mazandarani:</strong> These ethnic groups are found along the Caspian Sea coast in the north and speak Gilaki and Mazandarani languages. <br>
+                        
+                        <strong>9. Armenian:</strong> Primarily residing in northwest Iran, particularly in Isfahan and Tehran, they speak Armenian and are predominantly Christians. <br>
+                        
+                        <strong>10. Assyrian and Chaldean:</strong> Found mainly in western Iran, they speak Aramaic and are predominantly Christian. <br>
+                        
+                        <strong>11. Jewish:</strong> While a small minority, Iran has a historic Jewish community primarily living in cities like Tehran, Isfahan, and Shiraz <br></p>
+                                    
+            </div>
+           
+</body>
+</html>

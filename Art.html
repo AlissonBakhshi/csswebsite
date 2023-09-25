@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="Art.css"/>
+
+</head>
+
+<body>
+    <header>
+    <div class="navbar">
+        <div class="logo"><a href="#">Persian Culture Introduction</div>
+            <ul class="links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="Art.html">Art</a></li>
+                <li><a href="ethnic.html">Ethnic</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i></div> 
+    </div>
+    <div class="dropdown_menu ">
+        <ul class="links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Food.html">Food</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="ethnic.html">Ethnic</a></li>
+            <li><a href="#" class="action_btn">Get started</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <div class="card-image Art-1"></div>
+            <h2>Persian architecture</h2>
+            <p>Persian architecture, also known as Iranian architecture, is a reflection of Iran's rich cultural and historical heritage. It encompasses a wide range of architectural styles and structures that have evolved over thousands of years. Here are key features and aspects of Persian architecture</p>
+
+        </div>
+            <div class="card">
+                <div class="card-image Art-2"></div>
+                <h2>Persian Ceramics and Pottery</h2>
+                <p>Persian ceramics, including tiles and pottery, are renowned for their intricate designs and vibrant colors.
+                    - Cities like Kashan and Gorgan were known for their pottery production</p>
+
+                     
+            </div>
+    
+         <div class="card">
+            <div class="card-image Art-3"></div>
+            <h2>Persian carpet</h2>
+            <p>Persian carpet weaving has a long and rich tradition that dates back over 2,500 years. It is considered one of the most distinguished forms of textile art in the world.</p>
+                
+            </div>
+
+            <div class="card">
+                <div class="card-image Art-4"></div>
+                <h2>persian Calligraphy and Miniature Painting</h2>
+                <p>Persian calligraphy, whether in religious texts or as decorative art, is highly regarded for its intricate beauty.
+                    - Miniature painting continued to evolve, featuring detailed scenes often accompanied by text from Persian literature.</p>
+                    
+                </div>
+        </section>
+<section>
+    <h1 class="h1-table">Persian Art History</h1>
+
+<div><table>
+    <tr>
+        <th>Period</th>
+        <th>Key Highlights</th>
+    </tr>
+    <tr>
+        <td>Ancient Persia</td>
+        <td>
+            <ul>
+                <li>Monumental architecture of the Achaemenid Empire.</li>
+                <li>Richly decorated ceramics, textiles, and pottery.</li>
+                <li>Zoroastrian symbolism in art.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Islamic Period</td>
+        <td>
+            <ul>
+                <li>Islamic calligraphy and intricate geometric designs.</li>
+                <li>Emergence of Persian miniature painting.</li>
+                <li>Influence of Islamic art and architecture.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Safavid Dynasty</td>
+        <td>
+            <ul>
+                <li>Golden age of Persian art.</li>
+                <li>Isfahan as a center of art and architecture.</li>
+                <li>Highly detailed Persian carpets.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Qajar Dynasty</td>
+        <td>
+            <ul>
+                <li>Portraiture and European influences in art.</li>
+                <li>Qajar-style paintings and photography.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Contemporary Persian Art</td>
+        <td>
+            <ul>
+                <li>Modern Iranian artists blending traditional and contemporary styles.</li>
+                <li>Impact of the Iranian Revolution on the art scene.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+</section>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownmenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownmenu.classList.toggle('open')
+            const isOpen = dropDownmenu.classList.contains('open')
+
+            toggleBtnIcon.classlist = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+
+    
+</body>
+</html>
